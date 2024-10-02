@@ -7,6 +7,6 @@ namespace BankingApi.EventReceiver
         public DbSet<BankAccount> BankAccounts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlServer("Data Source=.\\SQLEXPRESS;Initial Catalog=BankingApiTest;Integrated Security=True;TrustServerCertificate=True;");
+            => options.UseSqlServer("Server=(local); Database=BankingApiTest; Integrated Security=SSPI; MultipleActiveResultSets = true; TrustServerCertificate=True;");
     }
 }

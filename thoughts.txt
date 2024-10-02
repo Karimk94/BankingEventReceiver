@@ -1,0 +1,4 @@
+
+1.database operations are performed in a transaction to avoid partial updates in case of an error.
+
+2.invalid messages or insufficient balance are treated as a non-transient failure.
